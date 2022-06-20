@@ -62,6 +62,10 @@ body {
     cursor: pointer;
 }
 
+.hide {
+    visibility: hidden;
+}
+
 .wrapper__head {
     margin-top: 10rem;
     text-align: center;
@@ -105,6 +109,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    height: 17rem;
 }
 
 .header__phone {
@@ -233,7 +238,7 @@ h2 {
 }
 
 .about {
-    margin-top: 5em;
+    margin-top: 5rem;
     height: 10rem;
     background: linear-gradient(45deg, #00bbff, #00ff99, #00bbff);
     /* background: #f23636; */
@@ -251,11 +256,26 @@ h2 {
     margin-top: 5rem;
 }
 
+.about__five {
+    margin-top: 0;
+    height: 8rem;
+}
+
+.about__six {
+    margin-top: 0;
+    height: 8rem;
+}
+
+.about__six p{
+    padding-top: 1%;
+    
+}
+
 .about h2 {
     text-align: center;
     font-size: 3rem;
     line-height: 4rem;
-    padding: 2.5% 0;
+    padding: 2% 0;
 }
 
 .consultation {
@@ -279,6 +299,10 @@ h2 {
     text-align: center;
     margin-bottom: 15px;
     color: rgb(255, 255, 255);
+}
+
+.consultation .policy {
+    color: #fff;
 }
 
 .title {
@@ -403,7 +427,8 @@ h2 {
 }
 
 .licenses p {
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     
 }
 
@@ -454,7 +479,7 @@ h2 {
 
 .contacts {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 0;
     position: relative;
     margin-bottom: 6rem;
     margin-bottom: 15rem;
@@ -599,7 +624,17 @@ h2 {
     display: none;
 }
 
+@media (max-width: 1024px) {
+    .w-100 {
+        width: 39%!important;
+    }
+}
+
 @media (max-width: 768px) {
+
+    .w-100 {
+        width: 53%!important;
+    }
     .logo img, .socials img {
         height: 5rem;
     }
@@ -641,12 +676,203 @@ h2 {
     .licenses p {
         padding-top: 2rem;
     }
-
+    .contact {
+        flex-direction: column;
+        margin-top: 0;
+        height: 15rem;
+    }
 
 }
 
-@media (max-width: 425px) {
-    
+@media (max-width: 426px) {
+    .logo img {
+        height: 3rem;
+    }
+    .socials img {
+        height: 4rem;
+    }
+    .wrapper {
+        margin-top: 0;
+    }
+    .headline {
+        flex-direction: column;
+        height: 25rem;
+    }
+    .headline a {
+        font-size: 2rem;
+    }
+    .header__contacts {
+        align-items: center;
+        height: 27rem;
+    }
+    .header__phone {
+        padding-bottom: 0.5rem;
+    }
+    .hide {
+        visibility: visible;
+    }
+    .topmenu-container {
+        height: 4rem;
+    }
+    .topmenu {
+        font-size: 1.3rem;
+    }
+    ul {
+        padding-left: 0;
+    }
+    .wrapper__head {
+        margin-top: 2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .services {
+        margin-top: 1rem;
+    }
+    .services img {
+        width: 7rem;
+    }
+
+    .services__ul {
+        top: 10rem;
+        padding: 0;
+
+    }
+
+    .services p {
+        font-size: 0.65rem;
+        margin-bottom: 0rem;
+    }
+    .services__two {
+        margin-top: 17rem;
+    }
+    .about h2 {
+        font-size: 1.5rem;
+    }
+    .about__two {
+        margin-top: 1rem;
+    }
+    .about__three {
+        margin-top: 2rem;
+    }
+    .about__four {
+        margin-top: 1rem;
+        height: 7rem;
+    }
+    .about__five {
+        height: 4.5rem;
+    }
+    .about__six {
+        height: 4rem;
+    }
+    .advantages, .preparations, .main-services {
+        margin-left: 4rem;
+        margin-top: 0;
+    }
+    .advantages p, .preparations p, .contacts p {
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-left: 0.5rem;
+    }
+    .advantage, .preparation {
+        font-size: 1rem;
+    }
+    .advantage li, .preparation li {
+        line-height: 2.5rem;
+    }
+    .licenses p {
+        padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+    .preparation li:before {
+        top: 12%;
+        left: -2.7rem;
+        width: 2rem;
+        height: 2rem;
+    }
+    .services__img {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    .service__descr {
+        margin-top: 1rem;
+        margin-right: 0;
+        margin-left: 0;
+        width: 30%;
+        text-align: center;
+    }
+    .service__descr img {
+        width: 7rem;
+        height: 7rem;
+    }
+    .service__description {
+        font-size: 1rem;
+    }
+    .main-services {
+        margin-top: 1rem;
+    }
+    .main-services p {
+        font-size: 1.5rem;
+    }
+    .main-serv {
+        font-size: 1rem;
+    }
+    .main-serv li {
+        line-height: 2rem;
+    }
+    .consultation {
+        min-height: 38rem;
+    }
+
+    .title {
+        font-size: 1.9rem;
+         
+    }
+    .consultation__descr {
+        font-size: 1.2rem;
+    }
+    .feed-form {
+        margin-top: 1.7rem;
+        width: 27rem;
+    }
+    .feed-form input {
+        height: 3.5rem;
+    }
+    .button_submit {
+        height: 4.3rem;
+        font-size: 1.5rem;
+    }
+    .licenses {
+        padding-bottom: 0;
+    }
+    .carousel-inner {
+        height: 48rem;
+    }
+    .w-100 {
+        width: 80%!important;
+    }
+    .contact {
+        height: 20rem;
+    }
+    .contact__item {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .modal {
+        width: 30rem;
+    }
+    .modal__close {
+        top: 6px;
+        right: 4px;
+    }
+    .feed-form_mt25 {
+        width: 22rem;
+    }
+   
 }
+
 
 

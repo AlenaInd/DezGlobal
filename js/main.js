@@ -54,11 +54,11 @@ $(document).ready(function(){
                     phone: "Пожалуйста, введите свой телефон",
                     email: {
                         required: "Пожалуйста, введите свою почту",
-                        email: "Your email address must be in the format of name@domain.com"
+                        email: "Ваш адрес почты должен быть в формате name@domain.com"
                     }
                 }
             });
-        };
+        }
 
         valideForms('#consultation-form');
         valideForms('#consultation form');
@@ -103,5 +103,6 @@ $(document).ready(function(){
             });
             return false;
         });
+ 
 
     });
