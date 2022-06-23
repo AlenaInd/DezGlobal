@@ -109,7 +109,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    height: 17rem;
+    height: 9rem;
 }
 
 .header__phone {
@@ -245,8 +245,6 @@ h2 {
     position: relative;
 }
 
-
-
 .about__two {
     margin-top: 5rem;
     height: 14rem;
@@ -271,11 +269,14 @@ h2 {
     
 }
 
-.about h2 {
+.about-h2 {
     text-align: center;
     font-size: 3rem;
     line-height: 4rem;
     padding: 2% 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .consultation {
@@ -650,7 +651,7 @@ h2 {
     .services p {
         font-size: 0.88rem;
     }
-    .about h2 {
+    .about-h2 {
         font-size: 2.5rem;
         padding: 4% 0;
     }
@@ -696,7 +697,7 @@ h2 {
     }
     .headline {
         flex-direction: column;
-        height: 25rem;
+        height: 22rem;
     }
     .headline a {
         font-size: 2rem;
@@ -749,18 +750,23 @@ h2 {
     .services__two {
         margin-top: 17rem;
     }
-    .about h2 {
+    .about {
+        height: 5rem;
+    }
+    .about-h2 {
         font-size: 1.5rem;
+        line-height: 2rem;
     }
     .about__two {
         margin-top: 1rem;
+        height: 6.5rem;
     }
     .about__three {
         margin-top: 2rem;
     }
     .about__four {
         margin-top: 1rem;
-        height: 7rem;
+        height: 5rem;
     }
     .about__five {
         height: 4.5rem;
@@ -871,7 +877,35 @@ h2 {
     .feed-form_mt25 {
         width: 22rem;
     }
+
    
+}
+
+@media (max-width: 425px) {
+    .about {
+        height: 5rem;
+    }
+    .about-h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .about__two {
+        margin-top: 1rem;
+        height: 6.5rem;
+    }
+    .about__three {
+        margin-top: 2rem;
+    }
+    .about__four {
+        margin-top: 1rem;
+        height: 5rem;
+    }
+    .about__five {
+        height: 4.5rem;
+    }
+    .about__six {
+        height: 4rem;
+    }
 }
 
 
